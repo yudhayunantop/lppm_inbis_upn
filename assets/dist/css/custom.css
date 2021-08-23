@@ -1,0 +1,7 @@
+* {
+	font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+body.dark-mode .gj-picker.gj-picker-bootstrap.datepicker {
+	background: #000;
+}
