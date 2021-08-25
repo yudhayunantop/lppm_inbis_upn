@@ -9,20 +9,28 @@
 # General
 --------------------------------------------------------------*/
 
-.videoGede{
-  width: 640px;
-  height: 360px;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 10%;
+.wadah{
+  position: relative;
+  width: 95%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  margin: 5%;
 }
 
-.videoKecil{
-  width: 426px;
-  height: 240px;
-  margin-left: 30%;
-  margin-top: 4%;
-  margin-bottom: 4%;
+.enter{
+  display: block;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 95%;
+  height: 95%;
+  border: none;
+  margin: 0%;
 }
 
 body {
@@ -81,7 +89,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Header
 --------------------------------------------------------------*/
 
-/* EDITTT */
+/* EDIT */
 #header {
   height: 80px;
   transition: all 0.5s;
@@ -94,20 +102,22 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: none;
 }
 
-/* EDITTT */
+/* EDIT */
 #header.header-scrolled {
   background: #191ea8;
   height: 60px;
 }
 
+/* EDIT */
 #header .logo h1 {
-  font-size: 28px;
+  font-size: 18px;
   margin: 0;
   padding: 4px 0;
   line-height: 1;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
+  /* display: inline; */
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -241,6 +251,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  margin-top: 10px;
 }
 
 @media (max-width: 991px) {
@@ -732,9 +743,12 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+
+/* CONTAINER EDIT */
 .why-us .container {
   box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
-  background: #fff;
+  /* background: rgb(255, 255, 255); */
+  background: rgb(0,128,128);
 }
 
 .why-us .icon-box + .icon-box {
@@ -1467,7 +1481,7 @@ section {
   font-size: 18px;
 }
 
-.team .member .member-info span {
+.team .member .member-info header {
   display: block;
   font-size: 13px;
   text-transform: uppercase;

@@ -14,9 +14,9 @@ class UploadF extends CI_Controller
 
     public function index()
     {
-        // $data['title'] = "Upload file";
-        // $data['upload'] = $this->db->get('upload')->result();
-        // $this->load->view('upload/create', $data, FALSE);
+        $data['title'] = "File Download";
+        $data['uploadF'] = $this->uploadF->tampilUpload();
+        public_template('uploadf/list', $data);
     }
 
     public function data()

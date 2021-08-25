@@ -87,25 +87,29 @@
                 <div class="row">
                     <?php foreach ($video as $x => $post) : ?>
                             <?php if($x==0):?> 
+                                <div class="col-md-1">
+                                </div>
                                 <div class="col-lg-6">
-                                    <iframe class="videoGede" src="<?= $post->link?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="wadah">
+                                    <iframe class="responsive-iframe" src="<?= $post->link?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             <?php endif;?>
                     <?php break; endforeach;?>  
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <div class="row">
                                     <?php foreach ($video as $x => $post) : ?>
                                         <?php if($x==1):?> 
                                             <div class="col-lg-12">
-                                                <div class="embed-responsive embed-responsive-16by9 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInRight;">
-                                                    <iframe class="videoKecil" src="<?= $post->link?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="wadah embed-responsive embed-responsive-16by9 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInRight;">
+                                                    <iframe class="responsive-iframe" src="<?= $post->link?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                 </div>
                                             </div>
                                         <?php endif;?>
                                         <?php if($x==2):?> 
                                             <div class="col-lg-12">
-                                                <div class="embed-responsive embed-responsive-16by9 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInRight;">
-                                                    <iframe class="videoKecil" src="<?= $post->link?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="wadah embed-responsive embed-responsive-16by9 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInRight;">
+                                                    <iframe class="responsive-iframe" src="<?= $post->link?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                 </div>
                                             </div>
                                         <?php endif;?>
@@ -114,7 +118,8 @@
                                 </div>
                 </div>
             </div>
-        </section><!-- End Why Us Section -->
+        </section>
+        <!-- End Why Us Section -->
 
         <!-- Page Galeri -->
         <section class="services" id="galeri">

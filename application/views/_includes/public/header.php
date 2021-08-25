@@ -43,45 +43,50 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-transparent">
         <div class="container d-flex justify-content-between align-items-center">
-
+            
         <div class="logo">
             <h1 class="text-light">
                 <a href="<?= base_url(); ?>">
-                <img src="<?= base_url(); ?>assets/dist/img/logoupnbaru.png" alt="" class="img-fluid">
-                <span>Moderna</span>
+                    <img src="<?= base_url(); ?>assets/dist/img/logoupnbaru.png" alt="" class="img-fluid">
+                    <img src="<?= base_url(); ?>assets/dist/img/logoinbis2.png" alt="" class="img-fluid">
+                    <span>IBT Technopark</span>
+                    <!-- <span class="enter">Technopark</span> -->
                 </a>
             </h1>
         </div>
-
+        
         <nav id="navbar" class="navbar">
             <ul>
                 <li class="dropdown"><a href="<?= base_url(); ?>"><span>Beranda</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                                <li><a href="<?= base_url(); ?>#berita">Berita</a></li>
-                                <li><a href="<?= base_url(); ?>#pengumuman">Pengumuman</a></li>
-                                <li><a href="<?= base_url(); ?>#galeri">Galeri</a></li>
-                            </ul>
+                        <li><a href="<?= base_url(); ?>#berita">Berita</a></li>
+                        <li><a href="<?= base_url(); ?>#pengumuman">Pengumuman</a></li>
+                        <li><a href="<?= base_url(); ?>#galeri">Galeri</a></li>
+                    </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Tentang IBT Technopark</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                                <li><a href="#">IBT Technopark</a></li>
-                                <li><a href="#">Profil Pimpinan dan Staff</a></li>
-                                <li><a href="#">Struktur Organisasi</a></li>
+                        <li><a href="#">IBT Technopark</a></li>
+                        <li><a href="#">Profil Pimpinan dan Staff</a></li>
+                        <li><a href="#">Struktur Organisasi</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Inkubasi</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                                <li><a href="#">Program Internal</a></li>
-                                <li><a href="#">Program Eksternal</a></li>
+                        <li><a href="#">Program Internal</a></li>
+                        <li><a href="#">Program Eksternal</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Download</a></li>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
+                <li><a href="<?= base_url('uploadf/index');?>">Download</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+        
+        </div>
+    </header>
+    <!-- End Header -->
 
-    </div>
-</header>
-<!-- End Header -->
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex justify-cntent-center align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
@@ -89,7 +94,7 @@
     <!-- Slide 1 -->
     <div class="carousel-item active">
         <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Moderna</span></h2>
+            <h2 class="animate__animated animate__fadeInDown"><span>Inkubator Bisnis Teknologi Technopark</span></h2>
             <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
             <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
@@ -115,5 +120,8 @@
     </div>
 </section>
 <!-- End Hero -->
+
+<main id="main">
+
 <div class="content">
     <div class="container-xl">

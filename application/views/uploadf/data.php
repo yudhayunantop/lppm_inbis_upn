@@ -14,7 +14,7 @@
             <thead>
                 <th>#</th>
                 <th>Nama</th>
-                <th>Download</th>
+                <th>File</th>
                 <th></th>
             </thead>
             <tbody>
