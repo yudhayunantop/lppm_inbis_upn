@@ -1,3 +1,4 @@
+
 <div class="card card-outline card-primary">
     <div class="card-header">
         <h5 class="card-title">List <?= $title; ?></h5>
@@ -11,7 +12,7 @@
             </thead>
             <tbody>
                 <?php
-                $n = 1;
+                $n = $this->uri->segment('3') + 1;
                 foreach ($uploadF as $row) : ?>
                     <tr>
                         <td width="50"><?= $n++; ?>.</td>
@@ -26,4 +27,10 @@
             </tbody>
         </table>
     </div>
+</div>
+
+<div class="row mt-4">
+            <div class="col-12">
+            <?= $this->pagination->create_links(); ?>
+            </div>
 </div>

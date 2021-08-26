@@ -15,7 +15,17 @@ class UploadF extends CI_Controller
     public function index()
     {
         $data['title'] = "File Download";
-        $data['uploadF'] = $this->uploadF->tampilUpload();
+
+        $config['base_url'] = base_url('uploadf/index');
+        $config['total_rows'] = $this->uploadF->count_data();
+        $config['per_page'] = 5;
+        $config['reuse_query_string'] = TRUE;
+
+        $this->pagination->initialize($config);
+
+        $start = $this->uri->segment(3);
+
+        $data['uploadF'] = $this->uploadF->tampilUpload($config['per_page'], $start);
         public_template('uploadf/list', $data);
     }
 
