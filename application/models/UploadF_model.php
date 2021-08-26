@@ -27,12 +27,12 @@ class UploadF_model extends CI_Model
         return $query;
     }
     
-    // public function tampilupload()
-    // {
-    //     $this->db->from($this->table);
-    //     $this->db->order_by("id_upload", "desc");
-    //     return $this->db->get()->result();
-    // }
+    public function tampiluploadAdmin()
+    {
+        $this->db->from($this->table);
+        $this->db->order_by("id_upload", "desc");
+        return $this->db->get()->result();
+    }
 
     //menyimpan data mahasiswa
     // public function save()

@@ -34,7 +34,7 @@ class UploadF extends CI_Controller
         check_role(['admin']);
 
         $data['title'] = "Upload";
-        $data['uploadF'] = $this->uploadF->tampilUpload();
+        $data['uploadF'] = $this->uploadF->tampilUploadAdmin();
         admin_template('uploadf/data', $data);
     }
 
