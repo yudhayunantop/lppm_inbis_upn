@@ -138,6 +138,12 @@
                                     <p>Upload</p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+								<a href="<?= base_url('tenant/data'); ?>" class="nav-link <?= active_menu('tenant'); ?>">
+									<i class="nav-icon fas fa-building"></i>
+									<p>Tenant</p>
+								</a>
+							</li>
                             <!-- <li class="nav-item">
                                 <a href="<?= base_url('member'); ?>" class="nav-link <?= active_menu('member'); ?>">
                                     <i class="nav-icon fas fa-users fa-fw"></i>

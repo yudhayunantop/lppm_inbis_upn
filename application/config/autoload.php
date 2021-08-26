@@ -137,4 +137,5 @@ $autoload['model'] = array(
     'Post_model' => 'post', 
     'Comment_model' => 'comment', 
     'Video_model'=>'video', 
-    'UploadF_model'=>'uploadF');
+    'UploadF_model'=>'uploadF',
+    'Tenant_model'=>'tenant');
