@@ -154,3 +154,37 @@
         </div>
         </div>
         </section>
+
+		<!-- Page Tenant -->
+		<section class="services" id="galeri">
+			<div class="section-title">
+				<h2>Galeri</h2>
+				<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+			</div>
+			<div class="container">
+				<div class="row">
+					<?php
+					foreach ($galeri as $post) :
+						if($post->category_name=='Galeri') :
+							$thumbnail = $post->post_thumbnail ? $post->post_thumbnail : $this->config->item('post_thumbnail_default');
+							?>
+							<div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+								<div class="icon-box icon-box-pink">
+									<div class="img-thumbnail">
+										<a href="<?= base_url('post/view/') . $post->post_slug; ?>">
+											<img src="<?= base_url('assets/dist/img/posts/') . $thumbnail  ?>" class="card-img-top">
+									</div>
+									<h4 class="title"><?= $post->post_title; ?></h4>
+									</a>
+									<p class="description"><?= $post->category_name; ?>|<?= custom_date('d F Y', $post->post_date); ?></p>
+								</div>
+							</div>
+
+						<?php endif;?>
+					<?php endforeach; ?>
+					<div class="col-md-12 text-center">
+						<a href="<?= base_url('post/all') . '?category=8 &search=' ?>" class="btn btn-primary btn-lg" class="btn btn-primary btn-lg" role="button">Read More</a>
+					</div>
+				</div>
+			</div>
+		</section>
