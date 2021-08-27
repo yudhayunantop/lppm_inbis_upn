@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 26, 2021 at 03:36 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Waktu pembuatan: 27 Agu 2021 pada 16.33
+-- Versi server: 10.4.8-MariaDB
+-- Versi PHP: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category`
+-- Struktur dari tabel `category`
 --
 
 CREATE TABLE `category` (
@@ -35,19 +35,24 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `category`
+-- Dumping data untuk tabel `category`
 --
 
 INSERT INTO `category` (`category_id`, `category_name`, `category_desc`) VALUES
 (2, 'Berita', 'Lorem Update'),
 (6, 'Pengumuman', 'Englis Updates'),
 (8, 'Galeri', 'Galeri foto kegiatan inkubator bisnis'),
-(9, 'Visi Misi IBT Technopark', '');
+(9, 'Visi Misi IBT Technopark', ''),
+(10, 'IBT Technopark', ''),
+(11, 'Profil Pimpinan dan Staff', ''),
+(12, 'Struktur Organisasi', ''),
+(13, 'Program Internal', ''),
+(14, 'Program Eksternal', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `comments`
+-- Struktur dari tabel `comments`
 --
 
 CREATE TABLE `comments` (
@@ -60,7 +65,7 @@ CREATE TABLE `comments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `comments`
+-- Dumping data untuk tabel `comments`
 --
 
 INSERT INTO `comments` (`comment_id`, `comment_parent`, `comment_date`, `comment_body`, `post_id`, `user_id`) VALUES
@@ -71,7 +76,7 @@ INSERT INTO `comments` (`comment_id`, `comment_parent`, `comment_date`, `comment
 -- --------------------------------------------------------
 
 --
--- Table structure for table `posts`
+-- Struktur dari tabel `posts`
 --
 
 CREATE TABLE `posts` (
@@ -86,7 +91,7 @@ CREATE TABLE `posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `posts`
+-- Dumping data untuk tabel `posts`
 --
 
 INSERT INTO `posts` (`post_id`, `post_date`, `post_title`, `post_body`, `post_thumbnail`, `post_slug`, `category_id`, `user_id`) VALUES
@@ -107,12 +112,17 @@ INSERT INTO `posts` (`post_id`, `post_date`, `post_title`, `post_body`, `post_th
 (37, '2021-08-20', 'djbsdkgbksdjgbkjdbgkjdbgkjdbgjwdbgkj', '<p>kdjgbjdbjksgbdjsbgkjsdbgkjsdbgijksdbgijwbg;iwebg;iwebguwebg;uebguwebgouwebuebfubge</p>', NULL, 'djbsdkgbksdjgbkjdbgkjdbgkjdbgjwdbgkj', 2, 1),
 (38, '2021-08-23', 'Visi blablabla', '<p>bwhefbiwefbifbwefbufbuebfeiufb</p>', NULL, 'visi-blablabla', 9, 1),
 (39, '2021-08-23', 'Gambarrrr', '<p><br></p><table class=\"table table-bordered\"><tbody><tr><td><p><img src=\"http://localhost/web/InkubatorBisnis/ci_blog/assets/dist/img/posts/a943a7d57d11ec8b1e069cb643cbd7a3.jpg\" style=\"width: 758.463px;\"><br></p></td><td style=\"text-align: center; \"><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p><br></p>', NULL, 'gambarrrr', 8, 1),
-(40, '2021-08-25', 'Test Pengumuman', '<p>dadadaddadadadadadadad</p>', '28f7285dc8a3f233b6d8b28dfdc8194e.jpg', 'test-pengumuman', 6, 1);
+(40, '2021-08-25', 'Test Pengumuman', '<p>dadadaddadadadadadadad</p>', '28f7285dc8a3f233b6d8b28dfdc8194e.jpg', 'test-pengumuman', 6, 1),
+(41, '2021-08-27', 'Test', '<p>Test test test</p>', '8ee5c2277913673ab3b5e56786b24f55.png', 'test-3', 10, 1),
+(42, '2021-08-27', 'Test Profil', '<p>test profil bla bla bal&nbsp;</p>', 'c87caa71a963d46a5c6c7f9f84374f08.png', 'test-profil', 11, 1),
+(43, '2021-08-27', 'Test Struktur Organisasi', '<p>bajksbfijasbfibaw oijefn</p>', '4b4492723e41c3f1344a23a63bbc1ce3.png', 'test-struktur-organisasi', 12, 1),
+(44, '2021-08-27', 'Test Program Internal', '<p>jiioqwcyufwaeoqwwery qw</p>', '351705334a568ab61dfe2563841eae6d.jpeg', 'test-program-internal', 13, 1),
+(45, '2021-08-27', 'Test Program Eksternal', '<p>iancbetwvrwuiaenvrtwbgeyfucgbihojspfv</p>', '1c48bf9d1ff08a55e9a3b30ce7a4a8b0.png', 'test-program-eksternal', 14, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tenant`
+-- Struktur dari tabel `tenant`
 --
 
 CREATE TABLE `tenant` (
@@ -122,7 +132,7 @@ CREATE TABLE `tenant` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tenant`
+-- Dumping data untuk tabel `tenant`
 --
 
 INSERT INTO `tenant` (`id_tenant`, `logo`, `linktenant`) VALUES
@@ -131,7 +141,7 @@ INSERT INTO `tenant` (`id_tenant`, `logo`, `linktenant`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `uploadf`
+-- Struktur dari tabel `uploadf`
 --
 
 CREATE TABLE `uploadf` (
@@ -141,7 +151,7 @@ CREATE TABLE `uploadf` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `uploadf`
+-- Dumping data untuk tabel `uploadf`
 --
 
 INSERT INTO `uploadf` (`id_upload`, `name`, `file_upload`) VALUES
@@ -161,7 +171,7 @@ INSERT INTO `uploadf` (`id_upload`, `name`, `file_upload`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -174,7 +184,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `fullname`, `avatar`, `role`) VALUES
@@ -184,7 +194,7 @@ INSERT INTO `users` (`user_id`, `username`, `password`, `fullname`, `avatar`, `r
 -- --------------------------------------------------------
 
 --
--- Table structure for table `video`
+-- Struktur dari tabel `video`
 --
 
 CREATE TABLE `video` (
@@ -193,7 +203,7 @@ CREATE TABLE `video` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `video`
+-- Dumping data untuk tabel `video`
 --
 
 INSERT INTO `video` (`video_id`, `link`) VALUES
@@ -214,89 +224,89 @@ INSERT INTO `video` (`video_id`, `link`) VALUES
 --
 
 --
--- Indexes for table `category`
+-- Indeks untuk tabel `category`
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`category_id`);
 
 --
--- Indexes for table `comments`
+-- Indeks untuk tabel `comments`
 --
 ALTER TABLE `comments`
   ADD PRIMARY KEY (`comment_id`);
 
 --
--- Indexes for table `posts`
+-- Indeks untuk tabel `posts`
 --
 ALTER TABLE `posts`
   ADD PRIMARY KEY (`post_id`);
 
 --
--- Indexes for table `tenant`
+-- Indeks untuk tabel `tenant`
 --
 ALTER TABLE `tenant`
   ADD PRIMARY KEY (`id_tenant`);
 
 --
--- Indexes for table `uploadf`
+-- Indeks untuk tabel `uploadf`
 --
 ALTER TABLE `uploadf`
   ADD PRIMARY KEY (`id_upload`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- Indexes for table `video`
+-- Indeks untuk tabel `video`
 --
 ALTER TABLE `video`
   ADD PRIMARY KEY (`video_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `category`
+-- AUTO_INCREMENT untuk tabel `category`
 --
 ALTER TABLE `category`
-  MODIFY `category_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `category_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `comments`
+-- AUTO_INCREMENT untuk tabel `comments`
 --
 ALTER TABLE `comments`
   MODIFY `comment_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `posts`
+-- AUTO_INCREMENT untuk tabel `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `post_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
--- AUTO_INCREMENT for table `tenant`
+-- AUTO_INCREMENT untuk tabel `tenant`
 --
 ALTER TABLE `tenant`
   MODIFY `id_tenant` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `uploadf`
+-- AUTO_INCREMENT untuk tabel `uploadf`
 --
 ALTER TABLE `uploadf`
   MODIFY `id_upload` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
   MODIFY `user_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `video`
+-- AUTO_INCREMENT untuk tabel `video`
 --
 ALTER TABLE `video`
   MODIFY `video_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
