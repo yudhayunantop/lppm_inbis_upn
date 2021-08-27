@@ -37,6 +37,11 @@
     <!-- Template Main CSS File -->
     <link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet">
 
+<!--	slider-->
+	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>/assets/css/lightslider.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="<?= base_url() ?>/assets/js/lightslider.min.js"></script>
+
 </head>
 
 <body>
