@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Agu 2021 pada 16.33
+-- Waktu pembuatan: 27 Agu 2021 pada 16.44
 -- Versi server: 10.4.8-MariaDB
 -- Versi PHP: 7.3.11
 
@@ -113,11 +113,11 @@ INSERT INTO `posts` (`post_id`, `post_date`, `post_title`, `post_body`, `post_th
 (38, '2021-08-23', 'Visi blablabla', '<p>bwhefbiwefbifbwefbufbuebfeiufb</p>', NULL, 'visi-blablabla', 9, 1),
 (39, '2021-08-23', 'Gambarrrr', '<p><br></p><table class=\"table table-bordered\"><tbody><tr><td><p><img src=\"http://localhost/web/InkubatorBisnis/ci_blog/assets/dist/img/posts/a943a7d57d11ec8b1e069cb643cbd7a3.jpg\" style=\"width: 758.463px;\"><br></p></td><td style=\"text-align: center; \"><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p><br></p>', NULL, 'gambarrrr', 8, 1),
 (40, '2021-08-25', 'Test Pengumuman', '<p>dadadaddadadadadadadad</p>', '28f7285dc8a3f233b6d8b28dfdc8194e.jpg', 'test-pengumuman', 6, 1),
-(41, '2021-08-27', 'Test', '<p>Test test test</p>', '8ee5c2277913673ab3b5e56786b24f55.png', 'test-3', 10, 1),
-(42, '2021-08-27', 'Test Profil', '<p>test profil bla bla bal&nbsp;</p>', 'c87caa71a963d46a5c6c7f9f84374f08.png', 'test-profil', 11, 1),
-(43, '2021-08-27', 'Test Struktur Organisasi', '<p>bajksbfijasbfibaw oijefn</p>', '4b4492723e41c3f1344a23a63bbc1ce3.png', 'test-struktur-organisasi', 12, 1),
-(44, '2021-08-27', 'Test Program Internal', '<p>jiioqwcyufwaeoqwwery qw</p>', '351705334a568ab61dfe2563841eae6d.jpeg', 'test-program-internal', 13, 1),
-(45, '2021-08-27', 'Test Program Eksternal', '<p>iancbetwvrwuiaenvrtwbgeyfucgbihojspfv</p>', '1c48bf9d1ff08a55e9a3b30ce7a4a8b0.png', 'test-program-eksternal', 14, 1);
+(41, '2021-08-27', 'Test', '<p>Test test test</p>', '267fbec3bf6abec669c66d8d9f6e4232.jpeg', 'test-3', 10, 1),
+(42, '2021-08-27', 'Test Profil', '<p>test profil bla bla bal&nbsp;</p>', '1605ccce9dbb299173805574d7966f07.jpg', 'test-profil', 11, 1),
+(43, '2021-08-27', 'Test Struktur Organisasi', '<p>bajksbfijasbfibaw oijefn</p>', 'ab79ad30638896a8548ceed1a3a100c4.png', 'test-struktur-organisasi', 12, 1),
+(44, '2021-08-27', 'Test Program Internal', '<p>jiioqwcyufwaeoqwwery qw</p>', 'bff46bd0339d9d8971d0bf7f8020d7ed.png', 'test-program-internal', 13, 1),
+(45, '2021-08-27', 'Test Program Eksternal', '<p>iancbetwvrwuiaenvrtwbgeyfucgbihojspfv</p>', '070652a6955fd5ea79d8ad6959109e84.png', 'test-program-eksternal', 14, 1);
 
 -- --------------------------------------------------------
 
