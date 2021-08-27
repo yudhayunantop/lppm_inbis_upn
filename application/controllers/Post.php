@@ -45,6 +45,7 @@ class Post extends CI_Controller
         $data['pengumuman'] = $this->post->getPengumuman($config['per_page'], $start);
         $data['galeri'] = $this->post->getGaleri($config['per_page'], $start);
         $data['video'] = $this->video->tampilVideo($config['video_tampil'], $start);
+        $data['tenant'] = $this->tenant->getAllTenant();
 
         $data['category'] = $this->main->get('category');
         $data['search'] = $search;

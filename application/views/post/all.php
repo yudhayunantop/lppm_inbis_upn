@@ -14,23 +14,9 @@
                                         </div>
         </form>
 
-        <section class="services" id="berita">
+        <section class="services">
             <div class="section-title">
-                <?php 
-                foreach ($posts as $post) :
-                if($post->category_name=='Berita') :?>
-                    <h2>Berita</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                <?php endif; ?>
-                <?php if($post->category_name=='Pengumuman'):?>
-                    <h2>Pengumuman</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                <?php endif; ?>
-                <?php if($post->category_name=='Galeri'):?>
-                    <h2>Galeri</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                <?php endif; ?>
-                <?php break; endforeach; ?>
+                <h2>Hasil Pencarian</h2>
             </div>
                 
             <div class="container">

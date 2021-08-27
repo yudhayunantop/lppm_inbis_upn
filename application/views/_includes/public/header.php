@@ -36,11 +36,7 @@
 
     <!-- Template Main CSS File -->
     <link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet">
-
-<!--	slider-->
-	<link type="text/css" rel="stylesheet" href="<?= base_url() ?>/assets/css/lightslider.min.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="<?= base_url() ?>/assets/js/lightslider.min.js"></script>
+    <link href="<?= base_url(); ?>assets/css/infinite-slider.css" rel="stylesheet">
 
 </head>
 
@@ -64,9 +60,11 @@
             <ul>
                 <li class="dropdown"><a href="<?= base_url(); ?>"><span>Beranda</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="<?= base_url(); ?>#berita">Berita</a></li>
                         <li><a href="<?= base_url(); ?>#pengumuman">Pengumuman</a></li>
+                        <li><a href="<?= base_url(); ?>#berita">Berita</a></li>
+                        <li><a href="<?= base_url(); ?>#video">Video</a></li>
                         <li><a href="<?= base_url(); ?>#galeri">Galeri</a></li>
+                        <li><a href="<?= base_url(); ?>#tenant">Tenant</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Tentang IBT Technopark</span> <i class="bi bi-chevron-down"></i></a>
