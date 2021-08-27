@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['signin'] = 'auth/index';
 $route['signup'] = 'auth/signup';
 $route['signout'] = 'auth/signout';
+//$route['post/showIBT/(:any)'] = 'post/showIBT/$1';

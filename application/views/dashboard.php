@@ -58,6 +58,20 @@
             <a href="<?= base_url('uploadf'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
     </div>
+	<div class="col-lg-3 col-6">
+		<!-- small box -->
+		<div class="small-box bg-purple">
+			<div class="inner">
+				<h3><?= count($tenant); ?></h3>
+
+				<p>Tenant</p>
+			</div>
+			<div class="icon">
+				<i class="nav-icon fas fa-building fa-fw"></i>
+			</div>
+			<a href="<?= base_url('tenant/data'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+		</div>
+	</div>
 
     <!-- ./col -->
     <!-- <div class="col-lg-3 col-6"> -->

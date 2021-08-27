@@ -19,6 +19,7 @@ class Dashboard extends CI_Controller
         $data['category']   = (array) $this->main->get('category');
         $data['video']   = (array) $this->main->get('video');
         $data['uploadF']   = (array) $this->main->get('uploadF');
+        $data['tenant'] = (array) $this->main->get('tenant');
         // $data['members']    = (array) $this->main->get_where('users', ['role' => 'member'], true);
         // $data['comments']   = (array) $this->main->get('comments');
 

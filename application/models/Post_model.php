@@ -106,6 +106,14 @@ class Post_model extends CI_Model
         return $query->row();
     }
 
+    public function getPostByCategory($category){
+		$this->db->select('p.*, c.category_name, u.fullname, u.avatar');
+		$this->db->join('category c', 'c.category_id=p.category_id');
+		$this->db->join('users u', 'u.user_id=p.user_id', 'left');
+		$query = $this->db->get_where('posts p', ['c.category_name' => $category]);
+		return $query->row();
+	}
+
     public function recent_post($slug)
     {
         $this->db->join('category c', 'c.category_id=p.category_id');

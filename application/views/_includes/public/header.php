@@ -69,15 +69,15 @@
                 </li>
                 <li class="dropdown"><a href="#"><span>Tentang IBT Technopark</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">IBT Technopark</a></li>
-                        <li><a href="#">Profil Pimpinan dan Staff</a></li>
-                        <li><a href="#">Struktur Organisasi</a></li>
+                        <li><a href="<?= base_url('/post/showIBT/IBT Technopark')?>">IBT Technopark</a></li>
+                        <li><a href="<?= base_url('/post/showIBT/Profil Pimpinan dan Staff')?>">Profil Pimpinan dan Staff</a></li>
+                        <li><a href="<?= base_url('/post/showIBT/Struktur Organisasi')?>">Struktur Organisasi</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Inkubasi</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Program Internal</a></li>
-                        <li><a href="#">Program Eksternal</a></li>
+                        <li><a href="<?= base_url('/post/showIBT/Program Internal')?>">Program Internal</a></li>
+                        <li><a href="<?= base_url('/post/showIBT/Program Eksternal')?>">Program Eksternal</a></li>
                     </ul>
                 </li>
                 <li><a href="<?= base_url('uploadf/index');?>">Download</a></li>
@@ -99,7 +99,6 @@
         <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown"><span>Inkubator Bisnis Teknologi Technopark</span></h2>
             <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
     </div>
 
@@ -108,7 +107,6 @@
         <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
             <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
     </div>
 

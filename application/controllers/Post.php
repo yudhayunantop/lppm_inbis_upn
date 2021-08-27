@@ -273,4 +273,22 @@ class Post extends CI_Controller
         $this->main->delete('posts', $where);
         redirect('post/data');
     }
+
+    public function showIBT($category = null){
+		$category = str_replace('%20',' ',$category);
+		$post = $this->post->getPostByCategory($category);
+    	if (!is_null($category)) {
+			$data['post'] =  $post;
+			$data['category'] = $category;
+			$data['selected_category'] = $data['post']->category_id;
+			$data['recent_posts'] = $this->post->recent_post($post->post_slug);
+		} else {
+			redirect('post/list');
+		}
+		public_template('post/ibt',$data);
+	}
+
+	public function test(){
+		var_dump($this->post->getPostByCategory('IBT Technopark'));
+	}
 }
