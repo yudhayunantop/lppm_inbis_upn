@@ -278,6 +278,7 @@ class Post extends CI_Controller
 		$category = str_replace('%20',' ',$category);
 		$post = $this->post->getPostByCategory($category);
     	if (!is_null($category)) {
+			$data['title']  = $category;
 			$data['post'] =  $post;
 			$data['category'] = $category;
 			$data['selected_category'] = $data['post']->category_id;
