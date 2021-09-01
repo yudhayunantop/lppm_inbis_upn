@@ -8,6 +8,7 @@
     <title><?= $title; ?></title>
     
     <meta content="" name="description">
+    <!-- KATA KUNCI MASUKKAN SINI -->
     <meta content="" name="keywords">
 
     <!-- Favicons -->

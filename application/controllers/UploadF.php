@@ -62,7 +62,7 @@ class UploadF extends CI_Controller
     private function _configUpload()
     {
         $config['upload_path'] = $this->path;
-        $config['allowed_types'] = 'gif|jpg|jpeg|png|jpeg|bmp|pdf|docx|doc|odt|xps';
+        $config['allowed_types'] = 'gif|jpg|jpeg|png|jpeg|bmp|pdf|docx|doc|odt|xps|ppt|pptx|xlsx|csv|xls';
         $config['max_size'] = 3000;
         $this->load->library('upload');
         $this->upload->initialize($config);

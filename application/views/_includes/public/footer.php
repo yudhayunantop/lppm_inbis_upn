@@ -86,7 +86,7 @@
             slidesToShow: 5,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 1000,
+            autoplaySpeed: 5000,
             arrows: false,
             dots: false,
             pauseOnHover: false,
