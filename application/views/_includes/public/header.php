@@ -9,7 +9,7 @@
     
     <meta content="" name="description">
     <!-- KATA KUNCI MASUKKAN SINI -->
-    <meta content="" name="keywords">
+    <meta content="Inbistechnopark,Inbisupnjatim,Technoparkupnjatim,ibttechnopark" name="keywords">
 
     <!-- Favicons -->
     <link href="<?= base_url(); ?>assets/dist/img/logoinbis2.png" rel="icon">
