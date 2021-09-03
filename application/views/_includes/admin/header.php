@@ -7,8 +7,8 @@
     <title><?= $title; ?></title>
 
     <!-- Favicons -->
-    <link href="<?= base_url() ?>assets/images/logo/favicon.png" rel="icon">
-    <link href="<?= base_url() ?>assets/profile/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?= base_url(); ?>assets/dist/img/logoinbis2.png" rel="icon">
+    <link href="<?= base_url(); ?>assets/dist/img/logoinbis2.png" rel="apple-touch-icon">
 
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">

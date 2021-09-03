@@ -17,7 +17,6 @@
         <section class="services" id="pengumuman">
             <div class="section-title">
                 <h2>Pengumuman</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
             <div class="container">
                 <div class="row">
@@ -51,7 +50,6 @@
         <section class="services" id="berita">
             <div class="section-title">
                 <h2>Berita</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
             <div class="container">
                 <div class="row">
@@ -128,7 +126,6 @@
         <section class="services" id="galeri">
             <div class="section-title">
                 <h2>Galeri</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
             <div class="container">
                 <div class="row">

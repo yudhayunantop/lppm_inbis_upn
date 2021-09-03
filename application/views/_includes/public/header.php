@@ -12,8 +12,11 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="<?= base_url(); ?>assets/img/favicon.png" rel="icon">
-    <link href="<?= base_url(); ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?= base_url(); ?>assets/dist/img/logoinbis2.png" rel="icon">
+    <link href="<?= base_url(); ?>assets/dist/img/logoinbis2.png" rel="apple-touch-icon">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/plugins/fontawesome-free/css/all.min.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -99,15 +102,15 @@
     <div class="carousel-item active">
         <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown"><span>Inkubator Bisnis Teknologi Technopark</span></h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <p class="animate__animated animate__fadeInUp">Inkubator Bisnis Teknologi (IBT) Technopark merupakan lembaga yang di bentuk oleh Universitas Pembangunan Nasional “Veteran”  Jawa Timur yang berfungsi melakukan inkubasi atau pendampingan terhadap Perusahaan Pemula Berbasis Teknologi / startup.</p>
         </div>
     </div>
 
     <!-- Slide 2 -->
     <div class="carousel-item">
         <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <h2 class="animate__animated animate__fadeInDown">“We Are Your Choices”</h2>
+            <p class="animate__animated animate__fadeInUp">Pengalaman kami lebih dari 5 tahun dalam kegiatan inkubasi, menjadikan kami inkubator yang berpengalaman untuk menumbuhkembangkan Perusahaan Pemula Berbasis Bekonologi / statrtup.</p>
         </div>
     </div>
 
