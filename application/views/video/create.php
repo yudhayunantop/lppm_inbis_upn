@@ -1,6 +1,6 @@
 <?= form_open_multipart(); ?>
 <div class="text-right mb-3">
-    <a href="<?= base_url('video/data'); ?>" class="btn btn-default">
+    <a href="<?= base_url('video'); ?>" class="btn btn-default">
         <i class="fa fa-arrow-left"></i> Back
     </a>
     <button type="submit" class="btn btn-primary">
