@@ -51,8 +51,10 @@
             
         <div class="logo">
             <h1 class="text-light">
-                <a href="<?= base_url(); ?>">
+                <a href="https://www.upnjatim.ac.id/">
                     <img src="<?= base_url(); ?>assets/dist/img/logoupnbaru.png" alt="" class="img-fluid">
+                </a>
+                <a href="<?= base_url(); ?>">
                     <img src="<?= base_url(); ?>assets/dist/img/logoinbis2.png" alt="" class="img-fluid">
                     <span>IBT Technopark</span>
                     <!-- <span class="enter">Technopark</span> -->

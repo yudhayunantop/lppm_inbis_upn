@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><?= $title; ?></title>
+
+    <!-- Favicons -->
+    <link href="<?= base_url(); ?>assets/dist/img/logoinbis2.png" rel="icon">
+    <link href="<?= base_url(); ?>assets/dist/img/logoinbis2.png" rel="apple-touch-icon">
+
     <!-- CSS files -->
     <link href="<?= base_url(); ?>assets/dist/css/tabler.min.css" rel="stylesheet" />
     <link href="<?= base_url(); ?>assets/dist/css/tabler-flags.min.css" rel="stylesheet" />
@@ -24,8 +29,8 @@
         <div class="container-tight py-6">
             <div class="text-center mb-4">
                 <!-- <a href="."><img src="<?= base_url(); ?>assets/static/logo.svg" height="36" alt=""></a> -->
-                <h1>Simple CMS</h1>
-                <small class="text-muted">by <strong>Inkubator Bisnis LPPM</strong></small>
+                <h1>CMS IBT</h1>
+                <small class="text-muted">by <strong>IBT Technopark</strong></small>
             </div>
             <?= form_open('', ['class' => 'card card-md', 'autocomplete' => 'off']); ?>
             <div class="card-body">

@@ -66,6 +66,6 @@ class Auth extends CI_Controller
     public function signout()
     {
         $this->session->unset_userdata('user_session');
-        redirect('post/index');
+        redirect(base_url());
     }
 }
