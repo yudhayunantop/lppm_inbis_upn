@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 03, 2021 at 09:39 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Generation Time: Nov 04, 2021 at 02:08 PM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -33,21 +33,6 @@ CREATE TABLE `category` (
   `category_name` varchar(128) NOT NULL,
   `category_desc` varchar(256) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `category`
---
-
-INSERT INTO `category` (`category_id`, `category_name`, `category_desc`) VALUES
-(2, 'Berita', ''),
-(6, 'Pengumuman', ''),
-(8, 'Galeri', ''),
-(9, 'Visi Misi IBT Technopark', ''),
-(10, 'IBT Technopark', ''),
-(11, 'Profil Pimpinan dan Staff', ''),
-(12, 'Struktur Organisasi', ''),
-(13, 'Program Internal', ''),
-(14, 'Program Eksternal', '');
 
 -- --------------------------------------------------------
 
@@ -81,17 +66,6 @@ CREATE TABLE `posts` (
   `user_id` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `posts`
---
-
-INSERT INTO `posts` (`post_id`, `post_date`, `post_title`, `post_body`, `post_thumbnail`, `post_slug`, `category_id`, `user_id`) VALUES
-(1, '2021-09-03', 'IBT Technopark', '<p>Isi IBT Technopark</p>', NULL, 'ibt-technopark', 10, 1),
-(2, '2021-09-03', 'Profil Pimpinan dan Staff', '<p>Isi&nbsp;Profil Pimpinan dan Staff</p>', NULL, 'profil-pimpinan-dan-staff', 11, 1),
-(3, '2021-09-03', 'Struktur Organisasi', '<p>Isi&nbsp;Struktur Organisasi</p>', NULL, 'struktur-organisasi', 12, 1),
-(4, '2021-09-03', 'Program Internal', '<p>Isi&nbsp;Program Internal</p>', NULL, 'program-internal', 13, 1),
-(5, '2021-09-03', 'Program Eksternal', '<p>Isi Program Eksternal<br></p>', NULL, 'program-eksternal', 14, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -100,6 +74,7 @@ INSERT INTO `posts` (`post_id`, `post_date`, `post_title`, `post_body`, `post_th
 
 CREATE TABLE `tenant` (
   `id_tenant` int(11) NOT NULL,
+  `nama_tenant` varchar(200) DEFAULT NULL,
   `logo` varchar(300) NOT NULL,
   `linktenant` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -131,13 +106,6 @@ CREATE TABLE `users` (
   `role` enum('admin','member') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`user_id`, `username`, `password`, `fullname`, `avatar`, `role`) VALUES
-(1, 'admin', '$2y$10$0OAcT33SnZu0nzOIDtr3JemPpkqt7oaTOnv39uZhK5yCV/JCwTS7i', 'Administrators', '6ae9419e7356ff8c4af4b6487e9d8415.png', 'admin');
-
 -- --------------------------------------------------------
 
 --
@@ -146,6 +114,7 @@ INSERT INTO `users` (`user_id`, `username`, `password`, `fullname`, `avatar`, `r
 
 CREATE TABLE `video` (
   `video_id` int(11) NOT NULL,
+  `priority` int(11) DEFAULT NULL,
   `link` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -203,7 +172,7 @@ ALTER TABLE `video`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `category_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `category_id` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `comments`
@@ -215,7 +184,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `post_id` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tenant`
@@ -233,7 +202,7 @@ ALTER TABLE `uploadf`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `video`

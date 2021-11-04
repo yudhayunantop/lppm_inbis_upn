@@ -8,4 +8,7 @@ class Tenant_model extends CI_Model
 			->order_by('id_tenant', "desc")
 			->get()->result();
 	}
+	public function updateTenant($data,$idtenant){
+		return $this->db->update($this->table, $data, array('id_tenant' => $idtenant));
+	}
 }

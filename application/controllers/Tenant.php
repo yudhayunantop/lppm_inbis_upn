@@ -3,11 +3,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Tenant extends CI_Controller
 {
 	private $path = "";
+	public $tenant;
+
 	public function __construct()
 	{
 		parent::__construct();
 		$this->path = FCPATH . "assets/dist/logo/";
 		$this->load->library('pagination');
+		$this->tenant = new Tenant_model();
 	}
 
 	public function index()
@@ -52,30 +55,55 @@ class Tenant extends CI_Controller
 		check_role(['admin']);
 
 		$input['linktenant'] = $this->input->post('linktenant', false);
+		$input['nama_tenant'] = $this->input->post('namatenant',false);
 		// var_dump($input);
 		$this->_configUpload();
-
 		if (!$this->upload->do_upload('file_logo')) {
+			print_r($this->upload->do_upload('file_logo'));
 			$error = array('error' => $this->upload->display_errors());
 			redirect('tenant/create', $error);
 		} else {
-
 			$file = $this->upload->data();
 			$input['logo'] = $file['file_name'];
 			$data = array('tenant' => $this->upload->data());
-
 			$this->main->insert('tenant', $input);
 			redirect('tenant/data', $data);
 		}
 	}
 
-	public function update($where)
+	public function edit($tenant_id)
 	{
 		check_role(['admin']);
-		$input['link'] = $this->input->upload('linktenant', false);
-		$input['logo'] = $this->input->upload('file_logo', false);
+
+		$where = ['id_tenant' => encode_php_tags($tenant_id)];
+
+		$data['title'] = 'Edit Post';
+		$data['tenant'] = $this->main->get_where('tenant', $where);
+		if (!$data['tenant']) redirect('tenant');
+
+		$this->validation();
+
+		if ($this->form_validation->run() == false) {
+			admin_template('tenant/edit', $data);
+		} else {
+			$this->update($tenant_id);
+		}
+	}
+
+	public function update($idtenant)
+	{
+		check_role(['admin']);
+		$input['linktenant'] = $this->input->post('linktenant', false);
+		$input['nama_tenant'] = $this->input->post('namatenant', false);
+		$this->_configUpload();
+		if ($this->upload->do_upload('file_logo')) {
+			$file = $this->upload->data();
+			$input['logo'] = $file['file_name'];
+		} else {
+
+		}
+		$this->tenant->updateTenant($input, $idtenant);
 		setMsg('success', 'Tenant updated.');
-		$this->main->update('tenant',$input, $where);
 		redirect('tenant/data');
 	}
 

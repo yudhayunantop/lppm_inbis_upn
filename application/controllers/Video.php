@@ -28,11 +28,8 @@ class Video extends CI_Controller
     public function create()
     {
         check_role(['admin']);
-
         $data['title'] = "Create New Link Video";
-
         $this->validation();
-
         if ($this->form_validation->run() == false) {
             admin_template('video/create', $data);
         } else {
@@ -46,8 +43,9 @@ class Video extends CI_Controller
 
         $input = $this->input->post(null, true);
         $input['link'] = $this->input->post('link', false);
-
-        $this->main->insert('video', $input);
+		$input['priority'] = $this->input->post('priority', false);
+		$this->video->save($input);
+//        $this->main->insert('video', $input);
         redirect('video');
     }
 
@@ -76,9 +74,10 @@ class Video extends CI_Controller
 
         $input = $this->input->post(null, true);
         $input['link'] = $this->input->post('link', false);
+		$input['priority'] = $this->input->post('priority');
 
         setMsg('success', 'Post updated.');
-        $this->main->update('video', $input, $where);
+        $this->video->update($input,$where);
         redirect('video');
     }
 

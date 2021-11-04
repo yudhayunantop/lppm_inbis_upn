@@ -12,7 +12,7 @@
     <div class="card-body p-0 table-responsive">
         <table class="table table-striped datatable">
             <thead>
-                <th>#</th>
+                <th>Prioritas</th>
                 <th>Link</th>
                 <th></th>
             </thead>
@@ -21,7 +21,7 @@
                 $n = 1;
                 foreach ($video as $row) : ?>
                     <tr>
-                        <td width="50"><?= $n++; ?>.</td>
+                        <td width="50"><?= $row->priority; ?></td>
                         <td width="100"><?= $row->link; ?></td>
                         <td width="100" class="text-right">
                             <div class="btn-group">

@@ -28,7 +28,11 @@
                     <input id="linktenant" name="linktenant" class="form-control" type="text" placeholder="Link Website Tenant" value="<?= set_value('link'); ?>" autocomplete="off">
                     <?= form_error('linktenant'); ?>
                 </div>
-
+				<div class="form-group">
+					<label for="namatenant">Nama Tenant</label>
+					<input id="namatenant" name="namatenant" class="form-control" type="text" placeholder="Nama Tenant" value="<?= set_value('namatenant'); ?>" autocomplete="off">
+					<?= form_error('namatenant'); ?>
+				</div>
                 <div class="form-group">
                     <label class="form-label" for="file_logo">Upload Logo</label>
                     <div class="custom-file">
