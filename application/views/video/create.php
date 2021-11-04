@@ -22,6 +22,11 @@
                 <!-- /.card-tools -->
             </div>
             <div class="card-body">
+				<div class="form-group">
+					<label for="priority">Prioritas Tampil</label>
+					<input id="priority" name="priority" class="form-control" type="text" placeholder="Angka Prioritas 1,2,3......" value="<?= set_value('priority'); ?>" autocomplete="off">
+					<?= form_error('priority'); ?>
+				</div>
                 <div class="form-group">
                     <label for="link">Link</label>
                     <input id="link" name="link" class="form-control" type="text" placeholder="Link..." value="<?= set_value('link'); ?>" autocomplete="off">

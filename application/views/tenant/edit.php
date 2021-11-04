@@ -13,7 +13,7 @@
         <div class="card card-outline card-primary shadow-sm">
             <div class="card-header">
                 <h3 class="card-title">Edit Upload</h3>
-
+				<?= form_error('error'); ?>
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
                         <i class="fas fa-minus"></i>
@@ -23,18 +23,23 @@
             </div>
 
             <div class="card-body">
+				<div class="form-group">
+					<label for="linktenant">Link Tenant</label>
+					<input id="linktenant" name="linktenant" class="form-control" type="text" placeholder="Link Website Tenant" value="<?= set_value('link',$tenant->linktenant); ?>" autocomplete="off">
+					<?= form_error('linktenant'); ?>
+				</div>
+				<div class="form-group">
+					<label for="namatenant">Nama Tenant</label>
+					<input id="namatenant" name="namatenant" class="form-control" type="text" placeholder="Nama Tenant" value="<?= set_value('namatenant',$tenant->nama_tenant); ?>" autocomplete="off">
+					<?= form_error('namatenant'); ?>
+				</div>
                 <div class="form-group">
-                    <label for="name">Judul File</label>
-                    <input id="name" name="name" class="form-control" type="text" placeholder="Judul File..." value="<?= set_value('name', $uploadF->name); ?>" autocomplete="off">
-                    <?= form_error('name'); ?>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="file_upload">Upload File</label>
+                    <label class="form-label" for="file_logo">Upload File</label>
                     <div class="custom-file">
-                    <?php echo form_open_multipart('uploadf/save');?>
-                        <input type="file" class="custom-file-input" id="file_upload" name="file_upload" aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="file_upload">Choose file</label>
+                    <?php echo form_open_multipart(`tenant/edit/$tenant->id_tenant`);?>
+                        <input type="file" class="custom-file-input" id="file_logo" name="file_logo" aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="file_logo"><?= set_value('file_logo',$tenant->logo); ?></label>
+
                         </div>
                 </div>
             </div>
