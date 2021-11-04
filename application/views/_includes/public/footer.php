@@ -18,15 +18,18 @@
               <p>
                 <i class="fas fa-phone-square-alt "></i>&emsp; 031 – 878 1400 <br>
                 <i class="far fa-envelope"></i>&emsp; inbistechnopark@upnjatim.ac.id <br>
-                <i class="fas fa-globe"></i>&emsp; inbistechnopark.upnjatim.ac.id <br>
+                <i class="fas fa-globe"></i>&emsp; inbis.upnjatim.ac.id<br>
                 <i class="fab fa-instagram"></i>&emsp; inkubatorbisnis_upnvjatim
               </p>
     
             </div>
     
             <div class="col-lg-3 col-md-6 footer-info">
-              <img src="<?= base_url(); ?>assets/dist/img/logoupnbaru.png" alt="Logo UPN" width="125">
-              <img src="<?= base_url(); ?>assets/dist/img/aibi.png" alt="Logo aibi" width="175">
+              <img src="<?= base_url(); ?>assets/dist/img/logo.png" alt="Logo UPN" width="650">
+              <br>
+              <br>
+              <br>
+              <img src="<?= base_url(); ?>assets/dist/img/aibi.png" alt="Logo aibi" width="200">
             </div>
     
           </div>

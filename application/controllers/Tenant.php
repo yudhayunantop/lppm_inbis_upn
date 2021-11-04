@@ -28,6 +28,12 @@ class Tenant extends CI_Controller
 		admin_template('tenant/data', $data);
 	}
 
+	public function tampiltenant(){
+		$data['title'] = "Tenant";
+		$data['tenant'] = $this->tenant->getAllTenant();
+		public_template('tenant/list', $data);
+	}
+
 	private function _configUpload()
 	{
 		$config['upload_path'] = $this->path;

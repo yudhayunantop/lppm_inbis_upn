@@ -97,9 +97,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: all 0.5s;
   background: #191ea8;
 }
-
+/* EDIT */
 #header.header-transparent {
-  background: none;
+  background: #191ea8;
 }
 
 /* EDIT */
@@ -179,6 +179,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: #a2cce3;
 }
 
+/* EDIT */
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -188,7 +189,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 10px 0;
   z-index: 99;
   opacity: 0;
-  visibility: hidden;
+  visibility: visible;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
@@ -219,10 +220,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   visibility: visible;
 }
 
+/* EDIT */
 .navbar .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
-  visibility: hidden;
+  visibility: visible;
 }
 
 .navbar .dropdown .dropdown:hover > ul {

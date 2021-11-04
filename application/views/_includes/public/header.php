@@ -55,7 +55,6 @@
                     <img src="<?= base_url(); ?>assets/dist/img/logoupnbaru.png" alt="" class="img-fluid">
                 </a>
                 <a href="<?= base_url(); ?>">
-                    <img src="<?= base_url(); ?>assets/dist/img/logoinbis2.png" alt="" class="img-fluid">
                     <span>IBT Technopark</span>
                     <!-- <span class="enter">Technopark</span> -->
                 </a>
@@ -96,39 +95,4 @@
     </header>
     <!-- End Header -->
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-        <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown"><span>Inkubator Bisnis Teknologi Technopark</span></h2>
-            <p class="animate__animated animate__fadeInUp">Inkubator Bisnis Teknologi (IBT) Technopark merupakan lembaga yang di bentuk oleh Universitas Pembangunan Nasional “Veteran”  Jawa Timur yang berfungsi melakukan inkubasi atau pendampingan terhadap Perusahaan Pemula Berbasis Teknologi / startup.</p>
-        </div>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-        <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">“We Are Your Choices”</h2>
-            <p class="animate__animated animate__fadeInUp">Pengalaman kami lebih dari 5 tahun dalam kegiatan inkubasi, menjadikan kami inkubator yang berpengalaman untuk menumbuhkembangkan Perusahaan Pemula Berbasis Bekonologi / statrtup.</p>
-        </div>
-    </div>
-
-    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-    </a>
-
-    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-    </a>
-
-    </div>
-</section>
-<!-- End Hero -->
-
-<main id="main">
-
-<div class="content">
-    <div class="container-xl">
