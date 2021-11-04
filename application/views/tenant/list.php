@@ -10,7 +10,7 @@
             <br>
         <div class="card card-outline card-primary">
             <div class="card-header">
-                <h5 class="card-title">Daftar Tenant</h5>
+                <h5 class="card-title">Daftar Tenant (<?= $jumlahtenant;?>)</h5>
             </div>
             <div class="card-body p-0 table-responsive">
                 <table class="table table-striped datatable">
@@ -26,10 +26,10 @@
                         foreach ($tenant as $row) : ?>
                             <tr>
                                 <td width="50"><?= $n++; ?>.</td>
-                                <td width="100"><?= $row->name; ?></td>
-                                <td><img src="assets/dist/logo/<?= $row->logo; ?>" alt="" width="20"></td>
+                                <td width="100"><img src="<?= base_url('assets/dist/logo/'.$row->logo); ?>" alt="" width="100" class="text-right"></td>
+                                <td width="100"><?= $row->nama_tenant; ?></td>
                                 <td width="100" class="text-left">
-                                    <a href="<?= base_url('assets/dist/unggahan/'.$row->linktenant); ?>" class="btn btn-light">
+                                    <a href="<?= $row->linktenant; ?>" class="btn btn-light">
                                         Kunjungi
                                     </a>
                                 </td>

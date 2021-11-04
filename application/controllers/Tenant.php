@@ -13,11 +13,6 @@ class Tenant extends CI_Controller
 		$this->tenant = new Tenant_model();
 	}
 
-	public function index()
-	{
-
-	}
-
 	private function validation()
 	{
 		$this->form_validation->set_rules('linktenant', 'Link', 'required');
@@ -33,7 +28,18 @@ class Tenant extends CI_Controller
 
 	public function tampiltenant(){
 		$data['title'] = "Tenant";
-		$data['tenant'] = $this->tenant->getAllTenant();
+
+		$config['base_url'] = base_url('tenant/tampiltenant');
+        $config['total_rows'] = $this->tenant->count_data();
+		$config['per_page'] = 5;
+        $config['reuse_query_string'] = TRUE;
+
+        $this->pagination->initialize($config);
+
+        $start = $this->uri->segment(3);
+		
+		$data['tenant'] = $this->tenant->tampilTenant($config['per_page'], $start);
+		$data['jumlahtenant'] = $this->tenant->count_data();
 		public_template('tenant/list', $data);
 	}
 
