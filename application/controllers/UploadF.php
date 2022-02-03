@@ -100,8 +100,8 @@ class UploadF extends CI_Controller
                     }
                 // }
 
-        // $this->main->insert('uploadf', $input);
-        // redirect('uploadf');
+        $this->main->insert('uploadf', $input);
+        redirect('uploadf');
     }
 
     public function edit($id_upload)
